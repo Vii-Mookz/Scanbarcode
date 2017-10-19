@@ -4,25 +4,31 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:paddingBottom="16dp"
+                android:icon="@drawable/iconbarcode"
                 tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/txtResult"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:text="Result:"
         android:textAlignment="textStart"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_marginBottom="105dp"
+        android:layout_above="@+id/btn_scan"
+        android:layout_alignStart="@+id/btn_scan"/>
 
     <Button
         android:id="@+id/btn_scan"
-        android:layout_width="match_parent"
+
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:drawableLeft="@mipmap/ic_barcode"
+        android:drawableRight="@mipmap/qr_code_icon"
+
         android:onClick="QrScanner"
-        android:text="QRScanner"/>
+        android:text="BARCODE | QR CODE"/>
 </RelativeLayout>
