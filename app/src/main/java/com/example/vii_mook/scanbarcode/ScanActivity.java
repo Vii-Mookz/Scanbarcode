@@ -1,6 +1,5 @@
 package com.example.vii_mook.scanbarcode;
 
-import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
 /**
  * Created by vii-mook on 10/19/2017 AD.
